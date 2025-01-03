@@ -22,6 +22,8 @@ To run the app locally, some dependencies are needed.
 * ultralytics
 * numpy
 
+Download the EasyOCR model `english_g2` from [https://www.jaided.ai/easyocr/modelhub/](https://www.jaided.ai/easyocr/modelhub/)
+
 Install the dependencies with:
 ```
 pip install -r requirements.txt
