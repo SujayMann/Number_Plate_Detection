@@ -1,6 +1,6 @@
 streamlit
-torch==2.5.1
-opencv-python==4.10.0.82
-easyocr==1.7.2
-ultralytics==8.3.56
-numpy==1.26.4
+torch
+opencv-python
+easyocr
+ultralytics
+numpy
