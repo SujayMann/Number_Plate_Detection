@@ -17,7 +17,7 @@ reader = easyocr.Reader(['en'], model_storage_directory='.')
 def predict_box(image):
     bbox = []
     with torch.inference_mode():
-        results = model(image)
+        results = model.predict(image)
         for res in results:
             boxes = res.boxes
             for box in boxes:
