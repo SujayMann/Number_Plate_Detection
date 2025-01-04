@@ -2,22 +2,17 @@ import torch
 import streamlit as st
 import easyocr
 import cv2
+import ultralytics
 from ultralytics import YOLO
 import numpy as np
-import os
 
-if not os.path.exists('best.torchscript'):
-    st.write("Model file not found!")
-else:
-    st.write('All good')
-    
 model = YOLO('best.torchscript', task='detect')
 reader = easyocr.Reader(['en'], model_storage_directory='.')
 
 def predict_box(image):
     bbox = []
     with torch.inference_mode():
-        results = model.predict(image)
+        results = model(image)
         for res in results:
             boxes = res.boxes
             for box in boxes:
