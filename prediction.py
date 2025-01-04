@@ -8,6 +8,8 @@ import os
 
 if not os.path.exists('best.torchscript'):
     st.write("Model file not found!")
+else:
+    st.write('All good')
     
 model = YOLO('best.torchscript', task='detect')
 reader = easyocr.Reader(['en'], model_storage_directory='.')
