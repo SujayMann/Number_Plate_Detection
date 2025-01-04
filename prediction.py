@@ -5,6 +5,9 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 
+if not os.path.exists('best.torchscript'):
+    st.write("Model file not found!")
+    
 model = YOLO('best.torchscript', task='detect')
 reader = easyocr.Reader(['en'], model_storage_directory='.')
 
