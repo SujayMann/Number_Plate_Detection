@@ -14,5 +14,9 @@ def info_page():
         6. If there is one, the model gives the text of the number plate as output.
     """)
 
+    st.write("""If the app doesn't work, it is most likely due to unavailability of the model used for prediction.
+    The model file was uploaded using Git LFS free plan so if that exceeds the restrictions then the app might not work temporarily.
+    Apologies for the inconvenience caused.""")
+
 if __name__ == '__page__':
     info_page()
