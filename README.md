@@ -3,10 +3,10 @@
 This project is a Number Plate Detector built using a fine tuned **YOLO11m** Model in **PyTorch**. The model can detect the number plate and then extract the text using **EasyOCR**. The app is deployed on **Streamlit** for an easy-to-use interface.
 ## Features
 
-* **Image Upload and Capture:** Upload or Capture an image using streamlit's interface.
+* **Image Upload and Live Video Feed:** Upload an image or use the Live Video Feed for detection using streamlit's interface.
 * **License Plate Detection:** The app uses a **YOLO11m** model for detecting a license plate in the image.
 * **Text Recognition**: The app uses **EasyOCR** to output the text of the detected number plate.
-* **Real-time Results:** Get immediate results once the image is uploaded.
+* **Real-time Results:** Get immediate results once the image is uploaded along with the bounding box in live feed and image.
 
 ## Demo
 
