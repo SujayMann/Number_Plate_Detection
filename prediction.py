@@ -4,6 +4,7 @@ import easyocr
 import cv2
 from ultralytics import YOLO
 import numpy as np
+import os
 
 if not os.path.exists('best.torchscript'):
     st.write("Model file not found!")
