@@ -78,7 +78,7 @@ def live_video():
             frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             stframe.image(frame_rgb, channels='RGB', use_container_width=True)
         
-        cap.release()        
+        capture.release()        
     
     else:
         st.write('Camera is disabled. Please enable it to start the live video.')
